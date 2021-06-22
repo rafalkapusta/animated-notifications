@@ -1,0 +1,14 @@
+@mixin notification($color) {
+    width: 100%;
+    height: 250px;
+
+    background: white;
+
+    border: 2px solid $color;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

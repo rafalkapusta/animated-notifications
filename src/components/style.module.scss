@@ -1,0 +1,21 @@
+@import 'src/style/mixins';
+
+.primary {
+    @include notification(blue);
+}
+
+.secondary {
+    @include notification(grey);
+}
+
+.error {
+    @include notification(red);
+}
+
+.warning {
+    @include notification(yellow);
+}
+
+.success {
+    @include notification(green);
+}
