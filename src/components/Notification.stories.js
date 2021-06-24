@@ -6,11 +6,26 @@ export default {
     component: Notification,
     argTypes: {
         title: { control: 'text', defaultValue: 'Title' },
-        content: { control: 'text', defaultValue: 'Content' },
+        content: {
+            control: 'text',
+            defaultValue:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sollicitudin orci. Morbi euismod euismod augue. Nam nibh tellus, interdum at eleifend ut, porta non sem. ',
+        },
     },
 }
 
-const Template = (args) => <Notification {...args} />
+const Template = (args) => (
+    <div
+        style={{
+            position: 'relative',
+            width: '100%',
+            height: '100vh',
+            overflow: 'hidden',
+        }}
+    >
+        <Notification {...args} />
+    </div>
+)
 
 export const Primary = Template.bind({})
 Primary.args = {
